@@ -1,0 +1,85 @@
+A) String Operations: Reverse a string, replace string with another string, merge two strings, Find character is in string or not without using loops, Split string into multiple words 
+ 
+Code:-  
+str1 = "Aditya"
+str2 = " Mavadia"
+#concatenate string
+str3 = str1 + str2
+print("Concatenate String : ",str3)
+#length of string
+str4 = "D23CE173"
+print("Length : ",len(str4))
+#accessing individual elements of string
+str5 = "D23CE173@charusat.edu.in"
+print("First element : ",str5[0])
+print("Last element : ",str5[-1])
+#reverse string
+str6 = "Hello ! World"
+str7 = str6[ : : -1]
+print("Reverse String : ",str7)
+#copying string
+
+str8 = "Earth is a sphere"
+str9 = str8[3:10]
+print("Copying string : ",str9)
+#replace a with b
+str10 = "Good Morning"
+str11 = str10.replace('n','m')
+print("Replacing a with b : ",str11)
+#upper and lower case
+str12 = "My name : Aditya"
+str13 = str12.upper()
+str14 = str13.lower()
+print("Upper case : ",str13)
+print("Lower case : ",str14)
+#split
+str15 = "Hello, XYZ!"
+str16 = str15.split()
+str17 = str15.split('!')
+print("Split : ",str16)
+print("Split : ",str17)
+#character in string without loop
+str18 = "Harsh, got killed"
+print("Char in string : ",'k' in str18)
+#count of occurence and find
+str19 = "Computer engineering"
+print("Count of h : ",str19.count('e'))
+str20 = "Bachelor of technology"
+print("Find h : ",str20.find('h')) 
+
+
+
+B) Dictionaries Operations: Apply “Update, Delete, clear, popitem, pop, get, keys and values” operation in the dictionary. Create 3 dictionaries and merge them into dictionary 
+ 
+Code:- 
+ 
+#Dictionary
+#empty dictionary {}
+dict1 = dict()
+print("Empty dict : ",dict1)
+dict2 = {64:"Devanshu", 67:"Harshil", 128:"Axay"}
+print("\nDictionary 2 : ",dict2)
+#copy dictionary
+dict3 = dict2.copy()
+print("\nDictionary 3 : ",dict3.items())
+#pop out element or pair
+ele = dict2.pop(67)
+print("\nElement popped: ",ele)
+print("\nLast item popped : ",dict2.popitem())
+#only keys and only values
+print("\nKeys : ",dict2.keys())
+print("Values : ",dict2.values())
+#concatenate dictionaries
+dict4 = dict({111:"Darshil"})
+dict4.update(dict2)
+print("\nUpdated : ",dict4)
+#delete item
+del dict4[111]
+print("After deleting : ",dict4)
+#merge 3 dictionaries
+dict5 = {65:"yash"}
+dict6 = dict({111:"Rushit"})
+dict7 = {**dict2,**dict5,**dict6}
+print("\nAfter merging 3 dictionaries : ",dict7)
+#clear function
+print("Clear function : ",dict7.clear())
